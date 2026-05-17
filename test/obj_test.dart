@@ -32,13 +32,13 @@ mixin Ano {
 }
 
 class Aluno extends Pessoa with Ano {
-  Aluno(String nome, int ano) : super(nome) {
+  Aluno(super.nome, int ano) {
     this.ano = ano;
   }
 }
 
 class Professor extends Pessoa {
-  Professor(String nome) : super(nome);
+  Professor(super.nome);
 }
 
 class Disciplina {
@@ -67,8 +67,7 @@ class Turma with Ano {
 class Historico extends Turma {
   Map<Aluno, List<double>> notas = {};
 
-  Historico(Disciplina disciplina, Professor professor, int ano)
-      : super(disciplina, professor, ano);
+  Historico(super.disciplina, super.professor, super.ano);
 
   @override
   void matricular(Aluno aluno) {

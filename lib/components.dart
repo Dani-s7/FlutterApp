@@ -388,21 +388,27 @@ class _ComponentsPageState extends State<ComponentsPage> {
              children: [
                Radio<String>(
                  value: 'A',
+                 // ignore: deprecated_member_use
                  groupValue: _radio,
+                 // ignore: deprecated_member_use
                  onChanged: (v) => setState(() => _radio = v!),
                ),
                const Text('A'),
                const SizedBox(width: 12),
                Radio<String>(
                  value: 'B',
+                 // ignore: deprecated_member_use
                  groupValue: _radio,
+                 // ignore: deprecated_member_use
                  onChanged: (v) => setState(() => _radio = v!),
                ),
                const Text('B'),
                const SizedBox(width: 12),
                Radio<String>(
                  value: 'C',
+                 // ignore: deprecated_member_use
                  groupValue: _radio,
+                 // ignore: deprecated_member_use
                  onChanged: (v) => setState(() => _radio = v!),
                ),
                const Text('C'),

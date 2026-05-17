@@ -1,7 +1,5 @@
 import "package:flutter/material.dart";
 
-import 'components.dart';
-import 'theme.dart';
 
 class MaterialTheme {
   final TextTheme textTheme;
@@ -346,7 +344,7 @@ class MaterialTheme {
       bodyColor: colorScheme.onSurface,
       displayColor: colorScheme.onSurface,
     ),
-    scaffoldBackgroundColor: colorScheme.background,
+    scaffoldBackgroundColor: colorScheme.surface,
     canvasColor: colorScheme.surface,
   );
 
